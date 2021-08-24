@@ -17,7 +17,7 @@
         </thead>
         <tbody>
           <% @order.line_items.each_with_index do |item, index| %>
-            <%= render 'line_item', item_num: index + 1, product: item.product, quantity: item[:quantity].to_i, item_price_cents: item[:item_price_cents], total_price_cents: item[:total_price_cents] %>
+            <%= render 'line_item', item_num: index + 1, product: item.product, quantity: item[:quantity].to_i %>
           <% end %>
         </tbody>
         <tfoot>
