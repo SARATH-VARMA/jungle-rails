@@ -4,7 +4,6 @@ class Admin::CategoriesController < ApplicationController
 
   def index
     @categories = Category.all
-    puts @categories.inspect
   end
 
   def new
